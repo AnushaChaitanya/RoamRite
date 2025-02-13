@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Oswald:wght@300;500&family=Pacifico&family=Orbitron:wght@500&display=swap');
+
+/* Body Background */
+body {
+    background-image: url('bg1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'lora', serif;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* Brand Logo */
+.logo {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Brand Name */
+.brand-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #01124a;
+    text-shadow: 3px 3px 12px rgba(174, 49, 227, 0.8);
+    font-family: 'Pacifico', cursive;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 0;
+    /* background-color: rgba(0, 0, 0, 0.4) !important; */
+    transition: background-color 0.3s ease-in-out;
+     background-color: rgb(144, 140, 140) !important; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'lora', serif;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: #011651 !important;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #444a5b !important;
+    transform: scale(1.1);
+    /* text-shadow: 2px 2px 8px rgba(114, 170, 255, 0.8); */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color: #081f5f;
+    border-radius: 8px;
+}
+
+.dropdown-item {
+    color: #e0e7ff !important;
+    font-size: 1.1rem;
+}
+
+.dropdown-item:hover {
+    background-color: #3456d0 !important;
+    color: #ffffff !important;
+}
+
+/* Buttons */
+.btn-primary, .btn-success {
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: none !important;
+}
+.btn-primary:hover {
+    background-color: #072d9b;
+    color: white;
+}
+.btn-success:hover {
+    background-color: #047e47;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #01065de6;
+    text-align: center;
+    font-family: "Bricolage Grotesque", serif;
+    z-index: 1;
+}
+
+/* Welcome Text */
+.welcome-text {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 15px rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideInLeft 1s ease-out forwards;
+}
+
+/* Rotating Country Names */
+.place-name {
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 30px;
+    font-family: "Merriweather", serif;
+    color: #1606c8;
+    text-shadow: 3px 3px 12px rgba(227, 49, 179, 0.8);
+    opacity: 0;
+    transform: scale(0.5) rotate(-10deg);
+    animation: zoomRotate 1s ease-in-out forwards;
+}
+h3{
+    font-weight: bolder;
+    font-style: normal;
+}
+/* "Book Now" Button */
+.book-now-btn {
+    background-color: rgba(187, 178, 178, 0.711);
+    color: #01065de6;
+    font-size: 1.5rem;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    position: relative;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Hover Effect */
+.book-now-btn:hover {
+    background-color: #7d7dff;
+    color: #01065de6;
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px rgba(114, 170, 255, 0.5);
+}
+
+/* Slide-In from Left */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Zoom-In with Rotation */
+@keyframes zoomRotate {
+    from {
+        transform: scale(0.5) rotate(-10deg);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) rotate(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .welcome-text {
+        font-size: 3rem;
+        animation: slideInLeft 1s ease-in-out forwards;
+    }
+
+    .place-name {
+        font-size: 2.5rem;
+    }
+
+    .btn-lg {
+        font-size: 1.2rem;
+        padding: 12px 25px;
+    }
+}
