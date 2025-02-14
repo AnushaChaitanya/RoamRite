@@ -3,68 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>RoamRite</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <!-- Brand Logo & Name -->
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="logo.webp" alt="Brand Logo" class="logo"> 
-                <span class="brand-name">RoamRite</span>
-            </a>
-            
-            <!-- Navbar Toggler for Mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navbar Items -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Book</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="packagesDropdown" role="button" data-bs-toggle="dropdown">
-                            Packages
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">United States</a></li>
-                            <li><a class="dropdown-item" href="#">India</a></li>
-                            <li><a class="dropdown-item" href="#">France</a></li>
-                            <li><a class="dropdown-item" href="#">Germany</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                </ul>
-                
-                <!-- Login & Register Buttons -->
-                <div class="d-flex">
-                    <a href="login.html" class="btn btn-primary me-2">Login</a>
-                    <a href="register.html" class="btn btn-success">Register</a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container">
+                <!-- Brand Logo & Name -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="logo1.png" alt="Brand Logo" class="logo">
+                    <span class="brand-name">Roam Rite</span>
+                </a>
+        
+                <!-- Navbar Toggler for Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!-- Navbar Items -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Book</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="packagesDropdown" role="button" data-bs-toggle="dropdown">
+                                Packages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">United States</a></li>
+                                <li><a class="dropdown-item" href="#">India</a></li>
+                                <li><a class="dropdown-item" href="#">France</a></li>
+                                <li><a class="dropdown-item" href="#">Germany</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    </ul>
+        
+                    <!-- Login & Register Buttons -->
+                    <div class="d-flex">
+                        <a href="login.html" class="btn btn-primary me-2">Login</a>
+                        <a href="register.html" class="btn btn-success">Register</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+        
+    </header>
+    
+    
 
-    <!-- Background and Centered Content -->
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content text-center">
-            <h1 class="welcome-text"><h3>Welcome to <span id="brand-name"></span></h3></h1>
-            <h1 class="place-name"></h1>
-            <button class="book-now-btn" onclick="location.href='login.html';">Book Now</button>
+            <h4 class="welcome-text">Welcome to Roam Rite</h4>
+            <h1 class="place-name"> </h1>
+            <button class="grow_skew_forward btns mt-20" style="border-color: #ffc01c;" onclick="redirect()">Book Now</button>
         </div>
     </section>
-            <!-- <button class="login-btn" onclick="location.href='login.html';">BookNow</button> -->
 
-    <script src="script.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

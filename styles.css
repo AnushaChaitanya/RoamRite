@@ -1,207 +1,353 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Oswald:wght@300;500&family=Pacifico&family=Orbitron:wght@500&display=swap');
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
 
-/* Body Background */
-body {
-    background-image: url('bg1.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'lora', serif;
-    width: 100%;
-    height: 90vh;
-    overflow: hidden;
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Permanent Marker';
+    font-weight: 400;
+
 }
 
-/* Brand Logo */
-.logo {
+/* Navbar Styling */
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color:transparent;
+}
+
+.navbar-brand .logo {
     height: 40px;
     width: auto;
     margin-right: 10px;
 }
 
-/* Brand Name */
-.brand-name {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #01124a;
-    text-shadow: 3px 3px 12px rgba(174, 49, 227, 0.8);
-    font-family: 'Pacifico', cursive;
-}
-
-/* Navbar */
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    margin-bottom: 0;
-    /* background-color: rgba(0, 0, 0, 0.4) !important; */
-    transition: background-color 0.3s ease-in-out;
-     background-color: rgb(144, 140, 140) !important; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    font-family: 'lora', serif;
-}
-
-/* Navbar Links */
 .navbar-nav .nav-link {
-    color: #011651 !important;
-    transition: all 0.3s ease-in-out;
-    font-weight: bold;
-    font-size: 1.1rem;
+    color: #000229 !important;
+    font-weight: 800;
+    transition: 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #444a5b !important;
-    transform: scale(1.1);
-    /* text-shadow: 2px 2px 8px rgba(114, 170, 255, 0.8); */
+    color: #ff9946 !important;
 }
 
-/* Dropdown Menu */
-.dropdown-menu {
-    background-color: #081f5f;
-    border-radius: 8px;
+.btn-primary {
+    background-color: #007bff;
+    border: none;
 }
 
-.dropdown-item {
-    color: #e0e7ff !important;
-    font-size: 1.1rem;
-}
-
-.dropdown-item:hover {
-    background-color: #3456d0 !important;
-    color: #ffffff !important;
-}
-
-/* Buttons */
-.btn-primary, .btn-success {
-    transition: all 0.3s ease-in-out;
-    font-weight: bold;
-    border-radius: 25px;
-    padding: 10px 20px;
-    border: none !important;
-}
 .btn-primary:hover {
-    background-color: #072d9b;
-    color: white;
+    background-color: #0056b3;
 }
+
+.btn-success {
+    background-color: #a77428;
+    border: none;
+}
+
 .btn-success:hover {
-    background-color: #047e47;
-    color: white;
+    background-color: #218838;
 }
 
-/* Hero Section */
-.hero {
-    position: absolute;
-    top: 0;
-    left: 0;
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background: black; /* Set black background for mobile */
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .d-flex .btn {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+body {
+    background: #f8f9fa;
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    /* background: rgba(0, 0, 0, 0.8); */
+    padding: 15px 40px;
+    position: fixed;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #01065de6;
-    text-align: center;
-    font-family: "Bricolage Grotesque", serif;
-    z-index: 1;
+    top: 0;
+    z-index: 1000;
 }
-
-/* Welcome Text */
+.brand-name {
+    font-family:'Lucida Handwriting',  Cursive ;
+    font-weight: bold;
+    font-size: 24px; 
+    color: #000229;
+}
 .welcome-text {
-    font-size: 4rem;
+    /* font-size: 4rem;
     margin-bottom: 20px;
     text-shadow: 4px 4px 15px rgba(255, 255, 255, 0.5);
     opacity: 0;
     transform: translateX(-100px);
     animation: slideInLeft 1s ease-out forwards;
+    font-family: ''Serif; */
+    color: #226FBB;
+    font-size: 26px;
+    font-family: 'Lucida Handwriting',  Cursive ;
+    font-weight:bold;
+    text-align: center;
 }
-
-/* Rotating Country Names */
 .place-name {
     font-size: 3.5rem;
-    font-weight: bold;
-    font-style: italic;
-    margin-bottom: 30px;
-    font-family: "Merriweather", serif;
-    color: #1606c8;
-    text-shadow: 3px 3px 12px rgba(227, 49, 179, 0.8);
+    font-weight: 800;
+    font-family: "Playfair Display", serif; 
+    color: white; 
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8); 
     opacity: 0;
-    transform: scale(0.5) rotate(-10deg);
-    animation: zoomRotate 1s ease-in-out forwards;
+    transform: translateY(30px) scale(0.8);
+    animation: popupAnimation 0.8s ease-in-out forwards;
 }
+
+/* Popup Animation */
+@keyframes popupAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.8);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-10px) scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
 h3{
     font-weight: bolder;
     font-style: normal;
 }
-/* "Book Now" Button */
-.book-now-btn {
-    background-color: rgba(187, 178, 178, 0.711);
-    color: #01065de6;
-    font-size: 1.5rem;
-    padding: 12px 35px;
-    border-radius: 50px;
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
     font-weight: bold;
-    transition: all 0.3s ease-in-out;
-    border: none;
-    cursor: pointer;
-    z-index: 3;
+}
+
+.logo img {
+    margin-right: 10px; /* Adds space between the logo and text */
+    vertical-align: middle; /* Ensures proper alignment */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4a261;
+}
+.dropdown-item:hover {
+    background-color: #3456d0 !important;
+    color: #ffffff !important;
+}
+
+.btn {
+    background: #f4a261;
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e76f51;
+}
+
+.btn-secondary {
+    background: #226FBB;
+}
+
+.btn-secondary:hover {
+    background: #1d3557;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('bg2.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+  /* View all button on hover color fill */
+  .btns {
+    font-family: 'Urbanist', serif;
+    font-size:larger;
+    font-weight: bold;
+    border-radius: 25px;
+    align-items: center;
+    color: #11143F;
+    background: #fff;
+    border: 2px solid #E4E5E5;
+    text-align: center;
+    margin: auto;
+    display: block;
     position: relative;
-    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    overflow: hidden;
+    padding: 10px 25px;
+    margin-top: 21px;
 }
 
-/* Hover Effect */
-.book-now-btn:hover {
-    background-color: #7d7dff;
-    color: #01065de6;
-    transform: translateY(-3px);
-    box-shadow: 0px 10px 20px rgba(114, 170, 255, 0.5);
+.btns:hover {
+    color: #FFF;
+    border: 2px solid #ffc01c;
 }
 
-/* Slide-In from Left */
-@keyframes slideInLeft {
+.btns::after {
+    content: "";
+    background: #ffc01c;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+}
+
+.btns[class^="grow"]::after {
+    transition: all 0.3s ease;
+}
+
+.btns[class^="grow"]:hover::after {
+    transition: all 0.3s ease-out;
+}
+
+.btns.grow_skew_forward::after {
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+}
+
+.btns.grow_skew_forward:hover::after {
+    transform: skewX(-45deg) scale(1, 1);
+}
+
+.rotate {
+    animation: rotation 8s;
+}
+
+.linear {
+    animation-timing-function: linear;
+}
+
+.infinite {
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
     from {
-        transform: translateX(-100px);
-        opacity: 0;
+        transform: rotate(0deg);
     }
+
     to {
-        transform: translateX(0);
-        opacity: 1;
+        transform: rotate(360deg);
     }
 }
-
-/* Zoom-In with Rotation */
-@keyframes zoomRotate {
-    from {
-        transform: scale(0.5) rotate(-10deg);
-        opacity: 0;
+@media (max-width: 768px) {
+    .navbar-collapse {
+         background: rgb(221, 219, 218);  /*Set background to black for mobile */
+        text-align: center; /* Center align text */
+        padding: 8px 0;
     }
-    to {
-        transform: scale(1) rotate(0);
-        opacity: 1;
-    }
-}
 
-/* Responsive Adjustments */
-@media (max-width: 991px) {
     .navbar-nav {
-        text-align: center;
-    }
-
-    .btn {
         width: 100%;
-        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center navbar links */
     }
 
-    .welcome-text {
-        font-size: 3rem;
-        animation: slideInLeft 1s ease-in-out forwards;
+    .navbar-nav .nav-item {
+        width: 50%;
+        text-align: center;
+        margin-top: 5px;
     }
 
-    .place-name {
-        font-size: 2.5rem;
+    .navbar-nav .nav-link {
+        color: black !important; /* Ensure text remains visible */
+        padding: 10px;
+        font-size: 18px;
     }
 
-    .btn-lg {
-        font-size: 1.2rem;
-        padding: 12px 25px;
+    .navbar-nav .nav-link:hover {
+        color: #f4a261 !important; /* Highlight on hover */
+    }
+
+    /* Navbar Toggler Button */
+    .navbar-toggler {
+        border: none;
+        background: none;
+    }
+
+    .navbar-toggler-icon {
+        filter: invert(1); /* Ensure the icon is visible */
+    }
+    .dropdown-item:hover  {
+        background-color: #3456d0 !important;
+        color: #ffffff !important;
     }
 }
+
