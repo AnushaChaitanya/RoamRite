@@ -58,7 +58,7 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .navbar-collapse {
-        background: black; /* Set black background for mobile */
+        background: rgb(227, 213, 213); /* Set black background for mobile */
         text-align: center;
         padding: 15px 0;
     }
