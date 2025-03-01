@@ -28,13 +28,13 @@
 }
 
 .navbar-nav .nav-link {
-    color: #000229 !important;
-    font-weight: 800;
+    color: white !important;
+    font-weight: 600;
     transition: 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ff9946 !important;
+    color: #f4a261 !important;
 }
 
 .btn-primary {
@@ -91,20 +91,30 @@ body {
     color: #333;
 }
 
+.logo-container {
+    /* display: flex; */
+    align-items: center;
+}
 /* Navigation Bar */
 header {
-    /* background: rgba(0, 0, 0, 0.8); */
-    padding: 15px 40px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0px 40px;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
 }
+/* header {
+    padding: 15px 40px;
+    position: relative;
+    width: 100%;
+} */
+
 .brand-name {
-    font-family:'Lucida Handwriting',  Cursive ;
+    font-family:'Lucida Handwriting',  Cursive ;/* Change to your desired font */
     font-weight: bold;
-    font-size: 24px; 
-    color: #000229;
+    font-size: 24px; /* Adjust as needed */
+    color: #fff; /* Adjust color if necessary */
 }
 .welcome-text {
     /* font-size: 4rem;
@@ -115,17 +125,17 @@ header {
     animation: slideInLeft 1s ease-out forwards;
     font-family: ''Serif; */
     color: #226FBB;
-    font-size: 26px;
+    font-size: 32px;
     font-family: 'Lucida Handwriting',  Cursive ;
-    font-weight:bold;
+    font-weight: 700;
     text-align: center;
 }
 .place-name {
     font-size: 3.5rem;
-    font-weight: 800;
-    font-family: "Playfair Display", serif; 
-    color: white; 
-    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8); 
+    font-weight: 700;
+    font-family: "Playfair Display", serif; /* Classic & elegant font */
+    color: white; /* White text */
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8); /* Elegant shadow effect */
     opacity: 0;
     transform: translateY(30px) scale(0.8);
     animation: popupAnimation 0.8s ease-in-out forwards;
@@ -219,13 +229,25 @@ nav {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    height: 90vh;
     background: url('bg2.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
+
+/* .hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+} */
+
+/* .hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+} */
 
 .hero p {
     font-size: 18px;
@@ -234,8 +256,8 @@ nav {
   /* View all button on hover color fill */
   .btns {
     font-family: 'Urbanist', serif;
-    font-size:larger;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 600;
     border-radius: 25px;
     align-items: center;
     color: #11143F;
@@ -248,7 +270,6 @@ nav {
     z-index: 1;
     overflow: hidden;
     padding: 10px 25px;
-    margin-top: 21px;
 }
 
 .btns:hover {
@@ -350,4 +371,76 @@ nav {
         color: #ffffff !important;
     }
 }
+.booking-section img {
+    width: 100%;
+    border-radius: 10px;
+}
 
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.card-title b{
+    color: #01114d;
+}
+
+.service-box {
+    background: #e8ebf2;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-box h4 {
+    color: #007bff;
+    font-weight: bold;
+}
+/* .text-center{
+    font-size: large;
+    font-weight: bold;
+} */
+/* Smaller Mobile Screens */
+@media (max-width: 480px) {
+    select.form-select {
+        font-size: 0.875rem;
+        padding: 10px;
+        border-radius: 6px;
+    }
+}
+/* Light background for the package cards */
+.package-gallery .card {
+    background: #e7e7e7; /* Light background */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Star rating styling */
+.star-rating {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #ffb400; /* Gold color for stars */
+}
+
+.star-rating .stars {
+    margin-right: 5px;
+}
+
+.rating-value {
+    font-weight: bold;
+    color: #333;
+}
+h2{
+    font-style: italic ;
+    font-family: "Eagle Lake", serif;
+}
+.text-center{
+    color: rgb(18, 3, 83);
+    font-weight: bold;
+    font-family: "Eagle Lake", serif;
+    font-weight:bold;
+    font-style: italic
+}
