@@ -135,7 +135,7 @@ header {
     font-weight: 700;
     font-family: "Playfair Display", serif; /* Classic & elegant font */
     color: white; /* White text */
-    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8); /* Elegant shadow effect */
+    text-shadow: 4px 4px 15px rgba(29, 3, 124, 0.8); /* Elegant shadow effect */
     opacity: 0;
     transform: translateY(30px) scale(0.8);
     animation: popupAnimation 0.8s ease-in-out forwards;
@@ -270,6 +270,7 @@ nav {
     z-index: 1;
     overflow: hidden;
     padding: 10px 25px;
+    margin-top: 24px;
 }
 
 .btns:hover {
