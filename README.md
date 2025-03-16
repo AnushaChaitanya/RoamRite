@@ -12,7 +12,7 @@ Since this is a project-based course, there will be no end-semester examination.
 
 * Viva performance
 * Reports submitted for each problem statement
-
+  
 This course is structured to provide a practical, application-driven learning experience in front-end development, ensuring a strong foundation in web technologies.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Checkpoint 1
