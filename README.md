@@ -1,14 +1,20 @@
-                                                            Front-End Development Project
+                                                           Front-End Development Project
    ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------                                                         
-The front-end development project involves the development of web applications with the help of HTML, CSS, and JavaScript. This is an individual project.
-In this course, you will be exposed to a set of problem statements related to front end web development. These problem statements will build upon each other. You will be taken through a sample solution to each problem statement, in a hands-on session.
+The Front-End Development Project concentrates on creating web applications using HTML, CSS, and JavaScript. This is an individual project-based course intended to enhance hands-on learning and problem-solving capabilities in the field of front-end web development.
 
-Based upon your learning in the session, you will have to write the code to solve your given problem and submit a report along with the code. This will be repeated for the next problem statement, and so on.
+Throughout the course, you will be working on a series of problem statements related to front-end development, with each problem statement building upon the previous one. Hands-on sessions will guide you through sample solutions, helping you to understand the approach to solving these challenges.
 
-There will be a final viva after the submission of the report related to the last problem statement.
+Based on your learning in these sessions, you will be required to write the code to solve the assigned problem and submit a report along with the code. This process will be repeated for each subsequent problem statement.
 
-As this is a project course, there will be no end semester exam for this. Your marks will be allotted based upon the viva, as well as based on the reports submitted against each problem statement.
+At the end of the course, after submitting the final report, you will be required to appear for a viva examination related to the last problem statement.
 
+Since this is a project-based course, there will be no end-semester examination. Instead, your grades will be determined based on the following:
+
+* Viva performance
+* Reports submitted for each problem statement
+
+This course is structured to provide a practical, application-driven learning experience in front-end development, ensuring a strong foundation in web technologies.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Checkpoint 1
 *   Create Welcome page, index.html
 *   Create a Navigation menu at the top
@@ -49,3 +55,4 @@ Checkpoint 3
     * Left: Brand-related image
     * Right: Company info, establishment, and other details
 * Add a footer with brand name, social media icons, and the copyright symbol with the message "All Rights are Reserved."
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
