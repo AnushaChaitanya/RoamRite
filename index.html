@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,13 @@
     <script defer src="script.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- Bootstrap JS Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
+
 <body>
 
     <header>
@@ -24,19 +26,20 @@
                     <img src="logo1.png" alt="Brand Logo" class="logo">
                     <span class="brand-name">Roam Rite</span>
                 </a>
-        
+
                 <!-- Navbar Toggler for Mobile -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-        
+
                 <!-- Navbar Items -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Book</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="packagesDropdown" role="button" data-bs-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="packagesDropdown" role="button"
+                                data-bs-toggle="dropdown">
                                 Packages
                             </a>
                             <ul class="dropdown-menu">
@@ -50,7 +53,7 @@
                         <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                     </ul>
-        
+
                     <!-- Login & Register Buttons -->
                     <div class="d-flex">
                         <a href="login.html" class="btn btn-primary me-2">Login</a>
@@ -59,347 +62,445 @@
                 </div>
             </div>
         </nav>
-        
+
     </header>
-    
-    
+
+
 
     <!-- Hero Section -->
+     <div style="margin-right: -52px;">
     <section class="hero">
         <div class="hero-content text-center">
             <h4 class="welcome-text">Welcome to Roam Rite</h4>
             <h1 class="place-name"> </h1>
-            <button class="grow_skew_forward btns mt-20" style="border-color: #ffc01c;" onclick="redirect()">Book Now</button>
+            <button class="grow_skew_forward btns mt-20" style="border-color: #ffc01c;" onclick="redirect()">Book
+                Now</button>
         </div>
     </section>
+</div>
 
- <!-- Booking Section -->
-    <div style="background-color:#F3F7F6;">
-        <section class="booking-section container my-5" >
-            <div class="row" >
+    <!-- Booking Section -->
+    <div style="background: linear-gradient(to right, #FCE9DB , #C5E1F7); margin: -48px;">
+        <section class="booking-section container my-5">
+            <div class="row">
                 <!-- Left Side - Image -->
-                <div class="col-md-6 logo-container" >
+                <div class="col-md-6 logo-container">
                     <!-- <img src="logo1.png" alt="Company Brand" style ="height:60px;width: auto;" class="logo"> -->
-                    <img src="image3.png" alt="" style="height:50%;width:auto;box-shadow: 0px 3px 6px #00000029;border-radius: 337px 337px 10px 10px;margin-top:10%;">
-                    <h3 class="brand-name" style="color:#0a58ca;">Roam Rite</h3>
+                    <img src="image3.png" alt=""
+                        style="height:50%;width:auto;box-shadow: 0px 3px 6px #00000029;border-radius: 337px 337px 10px 10px;margin-top:10%;">
+                    <h3 class="brand-name" style="color:rgb(18, 3, 83);">Roam Rite</h3>
                     <div>
-                        <p style="color:#616066;font-size:18px;font-family:'Epilogue',serif;font-style:italic;font-weight:500;">
-                            Welcome to Roam Rite, your gateway to transforming travel dreams into reality.  
+                        <p
+                            style="color:#003366;font-size:18px;font-family:'Epilogue',serif;font-style:italic;font-weight:500;">
+                            Welcome to Roam Rite, your gateway to transforming travel dreams into reality.
                             Discover unparalleled experiences with us.
                         </p>
-                    
-                        <p style="color:#616066;font-size:18px;font-family:'Epilogue',serif;font-style:italic;font-weight:500;">
-                            Whether you crave serene beaches, bustling cityscapes, or breathtaking mountains,  
+
+                        <p
+                            style="color:#003366;font-size:18px;font-family:'Epilogue',serif;font-style:italic;font-weight:500;">
+                            Whether you crave serene beaches, bustling cityscapes, or breathtaking mountains,
                             our expertly curated travel packages cater to every wanderlust-driven soul.
                         </p>
-                    
-                    
                     </div>
                 </div>
-        
 
-        <!-- Right Side - Booking Form -->
-        <div class="col-md-6 mt-5">
-            <h2><b style="color: rgb(18, 3, 83);">Book Your Trip</b></h2>
-            <form id="bookingForm">
-                <div class="mb-3">
-                    <label for="destination" class="form-label"><b>Where to</b></label>
-                    <select id="destination" class="form-select" required style="z-index: -1;">
-                        <option value="">Select Destination</option>
-                        <option value="SriLanka">SriLanka</option>
-                        <option value="Maldives">Maldives</option>
-                        <option value="Italy">Italy</option>
-                        <option value="Dubai">Dubai</option>
-                        <option value="Lododon">Lododon</option>
-                        <option value="Paris">Paris</option>
-                        <option value="Manali">Manali</option>
-                        <option value="Andaman">Andaman</option>
-                        <option value="Switzerland">Switzerland</option>
-                    </select>
-                    
+
+                <!-- Right Side - Booking Form -->
+                <div class="col-md-6 mt-5">
+                    <h2><b style="color: rgb(18, 3, 83); font-size: 42px;">Book Your Trip</b></h2>
+                    <form id="bookingForm">
+                        <div class="mb-3">
+                            <label for="destination" class="form-label"><b>Where to</b></label>
+                            <select id="destination" class="form-select" required style="z-index: -1;">
+                                <option value="">Select Destination</option>
+                                <option value="SriLanka">SriLanka</option>
+                                <option value="Maldives">Maldives</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Dubai">Dubai</option>
+                                <option value="London">London</option>
+                                <option value="Paris">Paris</option>
+                                <option value="Manali">Manali</option>
+                                <option value="Andaman">Andaman</option>
+                                <option value="Switzerland">Switzerland</option>
+                            </select>
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="persons" class="form-label"><b>How Many Persons</b></label>
+                            <input type="number" id="persons" class="form-control" min="1" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="startDate" class="form-label"><b>Start Date</b></label>
+                            <input type="date" id="startDate" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="endDate" class="form-label"><b>End Date</b></label>
+                            <input type="date" id="endDate" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="description" class="form-label"><b>Description</b></label>
+                            <textarea id="description" class="form-control" minlength="50" maxlength="500"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn1" style="margin-left: 18px;"><b>Book Now</b></button>
+                    </form>
                 </div>
-
-                <div class="mb-3">
-                    <label for="persons" class="form-label"><b>How Many Persons</b></label>
-                    <input type="number" id="persons" class="form-control" min="1" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="startDate" class="form-label"><b>Start Date</b></label>
-                    <input type="date" id="startDate" class="form-control" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="endDate" class="form-label"><b>End Date</b></label>
-                    <input type="date" id="endDate" class="form-control" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="description" class="form-label"><b>Description</b></label>
-                    <textarea id="description" class="form-control" minlength="50" maxlength="500" required></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary"><b>Book Now</b></button>
-            </form>
-        </div>
+            </div>
+        </section>
     </div>
-</section>
+    <!-- Package Gallery Section -->
+    <div style="background: linear-gradient(to right, #FFD3A5, #FFAEC0); margin: -48px;">
+        <section class="package-gallery container my-5">
+            <h2 class="text-center" style="font-size: 42px;">Our Travel Packages</h2>
+            <div class="row">
+                <!-- Row 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="italy.webp" class="card-img-top" style="height: 200px;" alt="Package 1">
+                        <div class="card-body">
+                            <h5 class="card-title"><b style="color: #2B2D42;">Italy</b></h5>
+                            <p class="card-text">A land of rich history, Italy is home to stunning architecture,
+                                world-class art, and delicious cuisine. Explore the ancient ruins of Rome, the romantic
+                                canals of Venice, and the breathtaking coastline of Amalfi. Experience its vibrant
+                                culture</p>
+                            <p style="color: #4A4A4A;"><strong>Price: $22,000</strong></p>
+                            <p class="star-rating">
+                                <span class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="rating-value" style="color: #4A4A4A;">4.9</span>
+                            </p>
+                            <button class="bt">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="srilanka.webp" class="card-img-top" style="height: 200px;" alt="Package 2">
+                        <div class="card-body">
+                            <h5 class="card-title"><b style="color: #2B2D42;">Sri Lanka</b></h5>
+                            <p class="card-text">A gem in the Indian Ocean, Sri Lanka is known for its ancient temples,
+                                lush tea plantations, and stunning beaches. Explore the Sigiriya Rock Fortress, go on a
+                                wildlife safari, or relax in coastal towns like Mirissa.</p>
+                            <p style="color: #4A4A4A;"><strong>Price: $17,000</strong></p>
+                            <p class="star-rating">
+                                <span class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="rating-value" style="color: #4A4A4A;">4.0</span>
+                            </p>
+                            <button class="bt">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="maldives.jpg" class="card-img-top" style="height: 200px;" alt="Package 3">
+                        <div class="card-body">
+                            <h5 class="card-title"><b style="color: #2B2D42;">Maldives</b></h5>
+                            <p class="card-text"> A tropical paradise with overwater bungalows, turquoise waters, and
+                                coral reefs. Perfect for honeymooners and divers, the Maldives offers breathtaking
+                                sunsets, luxury resorts, and vibrant marine life.</p>
+                            <p style="color: #4A4A4A;"><strong>Price: $21,000</strong></p>
+                            <p class="star-rating">
+                                <span class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </span>
+                                <span class="rating-value" style="color: #4A4A4A;">4.4</span>
+                            </p>
+                            <button class="bt">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Row 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="andaman.avif" class="card-img-top" style="height: 200px;" alt="Package 1">
+                        <div class="card-body">
+                            <h5 class="card-title"><b style="color: #2B2D42;">Andaman</b></h5>
+                            <p class="card-text"> A tropical getaway with pristine beaches, crystal-clear waters, and
+                                rich marine life. Enjoy snorkeling at Havelock Island or explore the historic Cellular
+                                Jail. Relax on its serene beaches.</p>
+                            <p style="color: #4A4A4A;"><strong>Price: $22,000</strong></p>
+                            <p class="star-rating">
+                                <span class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="rating-value" style="color: #4A4A4A;">4.1</span>
+                            </p>
+                            <button class="bt">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="manali.jpg" class="card-img-top" style="height: 200px;" alt="Package 2">
+                        <div class="card-body">
+                            <h5 class="card-title"><b style="color: #2B2D42;">Manali</b></h5>
+                            <p class="card-text">A paradise for nature lovers, Manali is nestled in the Himalayas with
+                                snow-capped peaks, lush valleys, and adventure sports like paragliding, skiing, and
+                                river rafting.</p>
+                            <p style="color: #4A4A4A;"><strong>Price: $20,000</strong></p>
+                            <p class="star-rating">
+                                <span class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </span>
+                                <span class="rating-value" style="color: #4A4A4A;">4.6</span>
+                            </p>
+                            <button class="bt">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="swiz.jpg" class="card-img-top" style="height: 200px;" alt="Package 3">
+                        <div class="card-body">
+                            <h5 class="card-title"><b style="color: #2B2D42;">Switzerland</b></h5>
+                            <p class="card-text">A dream destination with scenic landscapes, Switzerland is famous for
+                                the Swiss Alps, picturesque lakes, and charming villages. Enjoy skiing, chocolates, and
+                                train journeys.</p>
+                            <p style="color: #4A4A4A;"><strong>Price: $29,000</strong></p>
+                            <p class="star-rating">
+                                <span class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="rating-value" style="color: #4A4A4A;">5.0</span>
+                            </p>
+                            <button class="bt">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Row 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="paris.jpg" class="card-img-top" style="height: 200px;" alt="Package 1">
+                        <div class="card-body">
+                            <h5 class="card-title"><b style="color: #2B2D42;">Paris</b></h5>
+                            <p class="card-text">Known as the "City of Love," Paris offers iconic landmarks like the
+                                Eiffel Tower, Louvre Museum, and Notre-Dame Cathedral. Stroll along the Seine River or
+                                enjoy fine dining at charming cafés.</p>
+                            <p style="color: #4A4A4A;"><strong>Price: $26,000</strong></p>
+                            <p class="star-rating">
+                                <span class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </span>
+                                <span class="rating-value" style="color: #4A4A4A;">4.5</span>
+                            </p>
+                            <button class="bt">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="london.jpeg" class="card-img-top" style="height: 200px;" alt="Package 2">
+                        <div class="card-body">
+                            <h5 class="card-title"><b style="color: #2B2D42;">London</b></h5>
+                            <p class="card-text">A city that blends history with modernity, London offers landmarks like
+                                Big Ben, Buckingham Palace, and the Tower of London. Explore museums, theaters, and
+                                vibrant street markets.</p>
+                            <p style="color: #4A4A4A;"><strong>Price: $28,000</strong></p>
+                            <p class="star-rating">
+                                <span class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="rating-value" style="color: #4A4A4A;">4.9</span>
+                            </p>
+                            <button class="bt">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="dubai.jpg" class="card-img-top" style="height: 200px;" alt="Package 3">
+                        <div class="card-body">
+                            <h5 class="card-title"><b style="color: #2B2D42;">Dubai</b></h5>
+                            <p class="card-text">A futuristic city in the desert, Dubai boasts the world's tallest
+                                building, Burj Khalifa, luxury shopping, and thrilling desert safaris. Experience
+                                adventure, opulence, and vibrant nightlife.</p>
+                            <p style="color: #4A4A4A;"><strong>Price: $22,000</strong></p>
+                            <p class="star-rating">
+                                <span class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </span>
+                                <span class="rating-value" style="color: #4A4A4A;">4.5</span>
+                            </p>
+                            <button class="bt">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Services Section -->
+    <div style="background: linear-gradient(to bottom right, #B2EBF2, #D7BDE2); margin: -48px; padding: -3px;">
+        <section class="services container my-5" style="padding-top: 0; margin-top: 0;">
+            <h2 class="text-center" style="font-size: 42px;">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <h3>Affordable Hotels</h3>
+                        <p>💡 </br>Experience world-class accommodations without breaking the bank.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <h3>Food & Drinks</h3>
+                        <p>🍽️ </br> Savor exquisite dishes and explore authentic local flavors.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <h3>Safety Guide</h3>
+                        <p>🛡️ </br>Navigate your journey with expert safety tips and secure travel guides.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <h3>24/7 Support</h3>
+                        <p>📞 </br>Get instant help anytime, anywhere, ensuring a stress-free trip.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <h3>Transportation</h3>
+                        <p>🚗</br> Enjoy smooth, hassle-free transportation wherever you go.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <h3>Custom Tours</h3>
+                        <p>🗺️ </br>Create unforgettable memories with tailor-made travel experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+   <!-- Gallery Section -->
+<div style="background: linear-gradient(to bottom right, #F0F8FF, #B2EBF2); margin:47px; margin-left: 3px; margin-right: -49px; margin-bottom: -48px;">
+    <section class="gallery container my-5">
+        <h2 class="text-center" style="font-size: 42px;">Our Gallery</h2>
+        
+        <div class="gallery-grid">
+            <img src="trip4.jpg" alt="Gallery Image 1" class="gallery-img">
+            <img src="trip11.jpg" alt="Gallery Image 2" class="gallery-img">
+            <img src="trip10.jpeg" alt="Gallery Image 3" class="gallery-img">
+            <img src="trip8.webp" alt="Gallery Image 4" class="gallery-img">
+            <img src="trip7.jpg" alt="Gallery Image 5" class="gallery-img">
+            <img src="trip5.jpg" alt="Gallery Image 6" class="gallery-img">
+            <img src="trip14.webp" alt="Gallery Image 7" class="gallery-img">
+            <img src="trip2.jpg" alt="Gallery Image 8" class="gallery-img">
+            <img src="trip3.jfif" alt="Gallery Image 9" class="gallery-img">
+            <img src="trip6.jpg" alt="Gallery Image 10" class="gallery-img">
+            <img src="trip9.jpeg" alt="Gallery Image 11" class="gallery-img">
+            <img src="trip13.webp" alt="Gallery Image 12" class="gallery-img">
+            <img src="trip 12.jpg" alt="Gallery Image 13" class="gallery-img">
+        </div>
+    </section>
 </div>
-<!-- Package Gallery Section -->
-<section class="package-gallery container my-5">
-    <h2 class="text-center">Our Travel Packages</h2>
-    <div class="row">
-        <!-- Row 1 -->
-        <div class="col-md-4">
-            <div class="card">
-                <img src="italy.webp" class="card-img-top"  style="height: 200px;" alt="Package 1">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Italy</b></h5>
-                    <p class="card-text">A land of rich history, Italy is home to stunning architecture, world-class art, and delicious cuisine. Explore the ancient ruins of Rome, the romantic canals of Venice, and the breathtaking coastline of Amalfi.</p>
-                    <p><strong>Price: $22,000</strong></p>
-                    <p class="star-rating">
-                        <span class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </span>
-                        <span class="rating-value">4.9</span>
-                    </p>
-                    <button class="btn btn-primary">Book Now</button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-4">
-            <div class="card">
-                <img src="srilanka.webp" class="card-img-top"  style="height: 200px;" alt="Package 2">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Sri Lanka</b></h5>
-                    <p class="card-text">A gem in the Indian Ocean, Sri Lanka is known for its ancient temples, lush tea plantations, and stunning beaches. Explore the Sigiriya Rock Fortress, go on a wildlife safari, or relax in coastal towns like Mirissa.</p>
-                    <p><strong>Price: $17,000</strong></p>
-                    <p class="star-rating">
-                        <span class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </span>
-                        <span class="rating-value">4.0</span>
-                    </p>
-                    <button class="btn btn-primary">Book Now</button>
-                </div>
-            </div>
-        </div>
 
-        <div class="col-md-4">
-            <div class="card">
-                <img src="maldives.jpg" class="card-img-top" style="height: 200px;"  alt="Package 3">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Maldives</b></h5>
-                    <p class="card-text"> A tropical paradise with overwater bungalows, turquoise waters, and coral reefs. Perfect for honeymooners and divers, the Maldives offers breathtaking sunsets, luxury resorts, and vibrant marine life.</p>
-                    <p><strong>Price: $21,000</strong></p>
-                    <p class="star-rating">
-                        <span class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </span>
-                        <span class="rating-value">4.4</span>
-                    </p>
-                    <button class="btn btn-primary">Book Now</button>
-                </div>
+
+
+   <!-- About Us Section -->
+   <div style="background: linear-gradient(to bottom right, #F7E8D0, #E8C1A0); margin-right: -52px; ">
+    <section class="about-us container my-5">
+        <div class="row align-items-center">
+            <!-- Left Side: Brand Image -->
+            <div class="col-md-6 text-center">
+                <img src="about.jpg" alt="Brand Image" class="about-img img-fluid w-100">
+            </div>
+            <!-- Right Side: Company Info -->
+            <div class="col-md-6">
+                <h2 class="about-us-heading">About Us</h2>
+                <p>At RoamRite, we believe that travel is more than just visiting new places—it's about
+                    creating unforgettable experiences, discovering new cultures, and making lifelong memories.</p>
+
+                <h3 class="fw-bold" style="color:rgb(71, 66, 66);font-size:20px;font-family:'Epilogue',serif;font-style:italic;font-weight:500;">Who We Are</h3>
+                <p>Founded in 2011 by <b>Anusha C</b>, RoamRite is a trusted travel company dedicated to crafting
+                    personalized journeys for travelers across the globe.</p>
+
+                <h3 class="fw-bold" style="color:rgb(71, 66, 66);font-size:20px;font-family:'Epilogue',serif;font-style:italic;font-weight:500;">Our Mission</h3>
+                <p>Our mission is to make travel seamless, exciting, and meaningful. With expert planning, handpicked
+                    destinations, and personalized service, we ensure every trip is a perfect blend of comfort,
+                    adventure, and discovery.</p>
+
+                <h3 class="fw-bold" style="color:rgb(71, 66, 66);font-size:20px;font-family:'Epilogue',serif;font-style:italic;font-weight:500;">Why Choose RoamRite?</h3>
+                <ul>
+                    <li>✨ Expertly Curated Itineraries – Crafted by travel experts.</li>
+                    <li>✨ Seamless Travel Experience – We handle it all.</li>
+                    <li>✨ Commitment to Sustainability – Eco-friendly tourism.</li>
+                </ul>
+                <p>At RoamRite, we don’t just plan trips—we create journeys that inspire. Let us be your passport
+                    to extraordinary adventures! 🌍✈️</p>
             </div>
         </div>
+    </section>
+</div>
+
+<!-- Footer Section -->
+<footer class="footer" style="margin: -48px; margin-right: -52px;">
+    <div class="container text-center">
+        <h4 class="brand-name">Roam Rite</h4>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p style="font-family:'Poppins',serif; font-style: normal;">&copy; All Rights Reserved.</p>
     </div>
-    <div class="row">
-        <!-- Row 1 -->
-        <div class="col-md-4">
-            <div class="card">
-                <img src="andaman.avif" class="card-img-top"  style="height: 200px;" alt="Package 1">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Andaman</b></h5>
-                    <p class="card-text"> A tropical getaway with pristine beaches, crystal-clear waters, and rich marine life. Enjoy snorkeling at Havelock Island or explore the historic Cellular Jail.</p>
-                    <p><strong>Price: $22,000</strong></p>
-                    <p class="star-rating">
-                        <span class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </span>
-                        <span class="rating-value">4.1</span>
-                    </p>
-                    <button class="btn btn-primary">Book Now</button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-4">
-            <div class="card">
-                <img src="manali.jpg" class="card-img-top"  style="height: 200px;" alt="Package 2">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Manali</b></h5>
-                    <p class="card-text">A paradise for nature lovers, Manali is nestled in the Himalayas with snow-capped peaks, lush valleys, and adventure sports like paragliding, skiing, and river rafting.</p>
-                    <p><strong>Price: $20,000</strong></p>
-                    <p class="star-rating">
-                        <span class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </span>
-                        <span class="rating-value">4.6</span>
-                    </p>
-                    <button class="btn btn-primary">Book Now</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card">
-                <img src="swiz.jpg" class="card-img-top" style="height: 200px;"  alt="Package 3">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Switzerland</b></h5>
-                    <p class="card-text">A dream destination with scenic landscapes, Switzerland is famous for the Swiss Alps, picturesque lakes, and charming villages. Enjoy skiing, chocolates, and train journeys.</p>
-                    <p><strong>Price: $29,000</strong></p>
-                    <p class="star-rating">
-                        <span class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </span>
-                        <span class="rating-value">5.0</span>
-                    </p>
-                    <button class="btn btn-primary">Book Now</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <!-- Row 1 -->
-        <div class="col-md-4">
-            <div class="card">
-                <img src="paris.jpg" class="card-img-top"  style="height: 200px;" alt="Package 1">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Paris</b></h5>
-                    <p class="card-text">Known as the "City of Love," Paris offers iconic landmarks like the Eiffel Tower, Louvre Museum, and Notre-Dame Cathedral. Stroll along the Seine River or enjoy fine dining at charming cafés.</p>
-                    <p><strong>Price: $26,000</strong></p>
-                    <p class="star-rating">
-                        <span class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </span>
-                        <span class="rating-value">4.5</span>
-                    </p>
-                    <button class="btn btn-primary">Book Now</button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-4">
-            <div class="card">
-                <img src="london.jpeg" class="card-img-top"  style="height: 200px;" alt="Package 2">
-                <div class="card-body">
-                    <h5 class="card-title"><b>London</b></h5>
-                    <p class="card-text">A city that blends history with modernity, London offers landmarks like Big Ben, Buckingham Palace, and the Tower of London. Explore museums, theaters, and vibrant street markets.</p>
-                    <p><strong>Price: $28,000</strong></p>
-                    <p class="star-rating">
-                        <span class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </span>
-                        <span class="rating-value">4.9</span>
-                    </p>
-                    <button class="btn btn-primary">Book Now</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card">
-                <img src="dubai.jpg" class="card-img-top" style="height: 200px;"  alt="Package 3">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Dubai</b></h5>
-                    <p class="card-text">A futuristic city in the desert, Dubai boasts the world's tallest building, Burj Khalifa, luxury shopping, and thrilling desert safaris. Experience adventure, opulence, and vibrant nightlife.</p>
-                    <p><strong>Price: $22,000</strong></p>
-                    <p class="star-rating">
-                        <span class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </span>
-                        <span class="rating-value">4.5</span>
-                    </p>
-                    <button class="btn btn-primary">Book Now</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Services Section -->
-<section class="services container my-5">
-    <h2 class="text-center">Our Services</h2>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="service-box">
-                <h4>Affordable Hotels</h4>
-                <p>Stay at top-rated hotels at budget-friendly prices.</p>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="service-box">
-                <h4>Food & Drinks</h4>
-                <p>Enjoy delicious meals and exotic cuisines.</p>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="service-box">
-                <h4>Safety Guide</h4>
-                <p>Stay safe with our expert travel guides.</p>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="service-box">
-                <h4>24/7 Support</h4>
-                <p>We are here to assist you anytime, anywhere.</p>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="service-box">
-                <h4>Transportation</h4>
-                <p>Hassle-free transport options available.</p>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="service-box">
-                <h4>Custom Tours</h4>
-                <p>Plan your dream trip with tailor-made packages.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-</body>
-</html>
+</footer>

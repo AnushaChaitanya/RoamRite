@@ -12,6 +12,11 @@
     font-weight: 400;
 
 }
+body{
+    overflow-x: hidden;
+    margin: 0;
+            padding: 0;
+}
 
 /* Navbar Styling */
 .navbar-brand {
@@ -89,6 +94,8 @@
 body {
     background: #f8f9fa;
     color: #333;
+    height: 90vh;
+    width: 100%;
 }
 
 .logo-container {
@@ -159,7 +166,7 @@ header {
 
 
 h3{
-    font-weight: bolder;
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -256,7 +263,7 @@ nav {
 }
   /* View all button on hover color fill */
   .btns {
-    font-family: 'Urbanist', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 16px;
     font-weight: 600;
     border-radius: 25px;
@@ -377,27 +384,121 @@ nav {
     width: 100%;
     border-radius: 10px;
 }
-
+.brand-name{
+    margin-top: 10px;
+}
+/* Card Styling */
 .card {
     border: 1px solid #ddd;
     border-radius: 10px;
     margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-.card-title b{
-    color: #01114d;
+.card-text {
+    color: #4A4A4A;
+    font-size: 13.5px;
+    font-family: "Poppins", serif;
 }
 
+/* Hover Effect */
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+}
+
+.card-title b{
+    color: #2B2D42;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: "Poppins", serif;
+}
+.btn1{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    align-items: center;
+    color: #11143F;
+    background: #fff;
+    border: 2px solid #ffc01c;
+    text-align: center;
+    margin: auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 10px 25px;
+    margin-top: 24px;
+}
+
+.btn1:hover {
+    color: #FFF;
+    border: 2px solid #ffc01c;
+}
+
+.btn1::after {
+    content: "";
+    background: #ffc01c;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+}
+
+.btn1[class^="btn1"]::after {
+    transition: all 0.3s ease;
+}
+
+.btn1[class^="btn1"]:hover::after {
+    transition: all 0.3s ease-out;
+}
+
+.btn1::after {
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+}
+
+.btn1:hover::after {
+    transform: skewX(-45deg) scale(1, 1);
+}
+
+
+.bt {
+    background-color: #FF6F61; /* Sky Blue */
+    color:white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .bt:hover {
+    background-color: #D9534F;
+    transform: scale(1.05);
+  }
 .service-box {
-    background: #e8ebf2;
+    background: white;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
     margin-bottom: 20px;
 }
+.service-box p{
+    font-family: "Playfair Display", serif;
+    color: #000;
+    font-size: 16px;
+}
 
-.service-box h4 {
-    color: #007bff;
-    font-weight: bold;
+.service-box h3 {
+    color: #003366 ;
+    font-size: 24px;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
 }
 /* .text-center{
     font-size: large;
@@ -413,7 +514,7 @@ nav {
 }
 /* Light background for the package cards */
 .package-gallery .card {
-    background: #e7e7e7; /* Light background */
+    background: white; /* Light background */
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -445,4 +546,96 @@ h2{
     font-family: "Eagle Lake", serif;
     font-weight:bold;
     font-style: italic
+}
+/* Gallery Section */
+/* Gallery Images - Fixed Size */
+/* .gallery-img {
+    width: 100%; /* Ensures responsiveness */
+    /* Ensures images maintain aspect ratio */
+    /* border-radius: 10px;
+    transition: transform 0.3s ease-in-out; */
+
+/* .gallery{
+    background-color: #91a4b9;
+} */
+/* .gallery .row{
+    background-color: #d9cccc;
+    width: 100%;
+} */
+
+.gallery-grid {
+    column-count: 3; /* Creates 3-column Masonry effect */
+    column-gap: 15px; /* Spacing between columns */
+}
+
+.gallery-img {
+    width: 100%; /* Makes images responsive */
+    margin-bottom: 15px; /* Adds spacing between rows */
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .gallery-grid {
+        column-count: 2; /* 2 columns for tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-grid {
+        column-count: 1; /* 1 column for mobile */
+    }
+}
+
+
+/* About Us Section */
+.about-img {
+    width: 100%; /* Ensures image is responsive */
+    height: auto;
+    border-radius: 15px; /* Adds rounded edges */
+}
+
+.about-us p {
+    font-size: 16px;
+    font-family: 'Epilogue', serif;
+    font-style: italic;
+    color: rgb(71, 66, 66)
+}
+.about-us-heading {
+    color:  rgb(18, 3, 83); /* Change to your desired color */
+    font-size: 42px;
+    font-weight: bold;
+}
+
+/* Footer Fix */
+.footer {
+    background: #2a2b3f;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .brand-name {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.footer .social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+}
+.footer .social-icons a:hover {
+    color: gold;
+}
+.footer p {
+    color: gold;
+    margin-top: 10px;
+    font-family: "Poppins" serif;
 }

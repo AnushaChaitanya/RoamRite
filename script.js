@@ -116,6 +116,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const viewMoreBtn = document.getElementById("viewMoreBtn");
+    const hiddenImages = document.querySelectorAll(".gallery-item.hidden");
+
+    viewMoreBtn.addEventListener("click", function () {
+        hiddenImages.forEach(img => img.classList.remove("hidden"));
+        viewMoreBtn.style.display = "none"; // Hide button after clicking
+    });
+});
 
 
 
