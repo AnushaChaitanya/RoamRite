@@ -1,4 +1,4 @@
-                                                            <center><b>Front-End Development Project</b></center>
+                                                            Front-End Development Project
    ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------                                                         
 The front-end development project involves the development of web applications with the help of HTML, CSS, and JavaScript. This is an individual project.
 In this course, you will be exposed to a set of problem statements related to front end web development. These problem statements will build upon each other. You will be taken through a sample solution to each problem statement, in a hands-on session.
