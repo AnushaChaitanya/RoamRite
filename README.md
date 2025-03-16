@@ -52,6 +52,5 @@ Checkpoint 3
 * Create two sections of a row, each having 50% width.
     * Left: Brand-related image
     * Right: Company info, establishment, and other details
-      
 * Add a footer with brand name, social media icons, and the copyright symbol with the message "All Rights are Reserved."
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
