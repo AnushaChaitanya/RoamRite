@@ -1,4 +1,4 @@
-                                                           Front-End Development Project
+                                                          Front-End Development Project
    ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------                                                         
 The Front-End Development Project concentrates on creating web applications using HTML, CSS, and JavaScript. This is an individual project-based course intended to enhance hands-on learning and problem-solving capabilities in the field of front-end web development.
 
