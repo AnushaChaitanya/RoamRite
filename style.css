@@ -1,0 +1,111 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* Apply Playfair Display */
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Background */
+.login-bg,
+.register-bg {
+    background: linear-gradient(to right, #002f4b, #dc4225, #f0c330, #00b09b);
+    background-size: 300% 300%;
+    animation: gradientMove 8s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 30px;
+    /* Added margin from top */
+}
+
+/* Animated Background */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Form Card */
+.login-card,
+.register-card {
+    background: rgba(255, 255, 255, 0.98);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Headings (Login / Register) */
+h2 {
+    font-size: 28px;
+    /* Increased Font Size */
+    font-weight: bold;
+    color: #002f4b;
+    /* Dark Blue */
+}
+
+/* Form Labels (Permanent Red) */
+.form-label {
+    color: #dc4225 !important;
+    /* 🔴 Red (No Hover Effect) */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Input Fields */
+.form-control {
+    background: rgba(255, 255, 255, 1);
+    border: 2px solid #002f4b;
+    color: black !important;
+    /* ✅ Change text inside fields to Black */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+/* Placeholder Text (Fix Date & Gender) */
+.form-control::placeholder,
+select.form-control {
+    color: black !important;
+    /* ✅ Change Date & Gender field text to Black */
+}
+
+/* Button Styling */
+.btn-warning {
+    font-family: "Lucida Handwriting", cursive;
+    background: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Link Styling */
+.text-light {
+    color: #002f4b !important;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.text-light:hover {
+    color: #dc4225 !important;
+}

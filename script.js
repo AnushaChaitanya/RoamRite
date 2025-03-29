@@ -125,6 +125,74 @@ document.addEventListener("DOMContentLoaded", function () {
         viewMoreBtn.style.display = "none"; // Hide button after clicking
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    // Registration Form Submission
+    if (document.getElementById("registerForm")) {
+        document.getElementById("registerForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            let fullname = document.getElementById("fullname").value.trim();
+            let contact = document.getElementById("contact").value.trim();
+            let dob = document.getElementById("dob").value;
+            let email = document.getElementById("email").value.trim();
+            let password = document.getElementById("password").value.trim();
+            let gender = document.getElementById("gender").value;
+
+            if (!fullname || !contact || !dob || !email || !password || !gender) {
+                alert("All fields are required!");
+                return;
+            }
+
+            if (contact.length < 10 || isNaN(contact)) {
+                alert("Enter a valid contact number!");
+                return;
+            }
+
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters!");
+                return;
+            }
+
+            // Store user data in localStorage
+            let user = { fullname, email, password };
+            localStorage.setItem("user", JSON.stringify(user));
+
+            alert("Registration successful! You can now login.");
+            window.location.href = "login.html"; // Redirect to login page
+        });
+    }
+
+    // Login Form Submission
+    if (document.getElementById("loginForm")) {
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            let email = document.getElementById("loginEmail").value.trim();
+            let password = document.getElementById("loginPassword").value.trim();
+
+            if (!email || !password) {
+                alert("Both fields are required!");
+                return;
+            }
+
+            // Retrieve stored user data
+            let storedUser = JSON.parse(localStorage.getItem("user"));
+
+            if (!storedUser) {
+                alert("No user found! Please register first.");
+                return;
+            }
+
+            if (email === storedUser.email && password === storedUser.password) {
+                alert("Login successful!");
+                window.location.href = "index.html"; // Redirect to Home Page
+            } else {
+                alert("Invalid credentials! Please try again.");
+            }
+        });
+    }
+});
+
 
 
 
