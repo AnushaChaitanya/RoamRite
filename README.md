@@ -23,7 +23,7 @@ As this is a project course, there will be no end semester exam for this. Your m
   
   -----------------------------------------------------------------------------------------------------------------------------------------
  
-  ## ✅ Checkpoint 2
+## ✅ Checkpoint 2
  Create a two-column layout (each 50% width):
  - Left: Brand-related image
  - Right: Booking form with:
@@ -49,7 +49,7 @@ As this is a project course, there will be no end semester exam for this. Your m
  
  ------------------------------------------------------------------------------------------------------------------------------------------
 
- ## ✅ Checkpoint 3
+## ✅ Checkpoint 3
 - Gallery Section
   - Add travel photos
   - Apply `transform: scale` on image hover
@@ -63,7 +63,7 @@ As this is a project course, there will be no end semester exam for this. Your m
   
   -----------------------------------------------------------------------------------------------------------------------------------------
  
-  ## ✅ Checkpoint 4
+## ✅ Checkpoint 4
 Registration:
    - Trigger modal or open register.html
    - Fields: Full Name, Contact, DOB, Email, Password, Gender
